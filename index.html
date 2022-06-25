@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior En-vogue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiveStyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="customer-care">
+            <div>
+                customer care
+            </div>
+            <div>
+                info@juniorenvague.com
+            </div>
+            <div>
+                03331501483
+            </div>
+        </div>
+        <div class="container">
+            <nav id="nav">
+                <div class="nav-container">
+                    <div class="brand">
+                        <a href="juniorenvague.com">
+                            <img src="images/envougue.png" alt="logo">
+                        </a>
+                    </div>
+                    <div id="navbar" class="hide-navbar">
+
+                        <button class="close-button" onclick="closeNavbar()"> &#128473; </button>
+
+                        <ul class="navbar-nav">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li class="dropdown"><a href="shop.html">Shop <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <span class="dropdown-sign" id="dropdown-list-1"></span>
+                                <ul class="dropdown-list">
+                                    <li><a href="onsale">On Sale</a></li>
+                                    <li><a href="summer">Summer</a></li>
+                                    <li><a href="winter">Winter</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="girls.html">Girl</a></li>
+                            <li><a href="boys.html">Boys</a></li>
+                            <li class="dropdown"><a href="newarrivals.html">New Arrival</a>
+                                <span class="dropdown-sign" id="dropdown-list-2"></span>
+                                <ul class="dropdown-list">
+                                    <li><a href="onsale">On Sale</a></li>
+                                    <li><a href="summer">Sumer</a></li>
+                                    <li><a href="winter">Winter</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="aboutus.html" class="list-width">About Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shop-module">
+                    <ul>
+                        <li class="list-display"><i class="fa fa-user"></i></li>
+                        <li class="list-display"><i class="fa fa-heart "></i></li>
+                        <li><i id="cart-btn" class="fa fa-shopping-bag "></i></li>
+                        <li>
+                            <i id="search-btn" class="fa fa-search "></i>
+                        </li>
+                        <!-- <div class="show-modal">
+                            <button id="portfolio-btn" class="button-4">More...</button>
+                        </div> -->
+                    </ul>
+                    <button id="hamburger-btn " onclick="openNavbar()">☰</button>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <!-- <img src="images/hero-set.png" alt=""> -->
+            <div class="hero-container">
+                <h1>Shine Bright</h1>
+                <div><span>Like a Superstar</span>
+                </div>
+                <div>
+                    <button class="btn button-1">Shop Girls</button>
+                    <button class="btn button-2">Shop Boys</button>
+                </div>
+            </div>
+        </section>
+        <section id="main-categories">
+            <div class="cat-container">
+                <div class="card">
+                    <img src="images/girls-clothing.jpg" alt="">
+                    <div>
+                        <h2>Girls</h2>
+                        <span>Clothing</span>
+                        <p>World's Best Brands</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/boys-clothing.jpg" alt="">
+                    <div>
+                        <h2>Boys</h2>
+                        <span>Clothing</span>
+                        <p>Incredible Quality</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/new-arrivals.jpg" alt="">
+                    <div>
+                        <h2>New Arrivals</h2>
+                        <!-- <span>Clothing</span> -->
+                        <p>for all ages</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/winter-clothing.jpg" alt="">
+                    <div>
+                        <h2>Winter</h2>
+                        <span>Clothing</span>
+                        <p>World's Best Brands</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/summer-clothing.jpg" alt="">
+                    <div>
+                        <h2 style="color: #333;">Summer</h2>
+                        <!-- <span>Clothing</span> -->
+                        <p style="color: #333;">For all ages</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/footer-wear.jpg" alt="">
+                    <div>
+                        <h2 style="color: #333;">Foot Wear</h2>
+                        <span style="color: #333;">Shoes</span>
+                        <p style="color: #333;">Incredible Quality</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="all-products">
+            <div class="all-products-Message">
+                <h2>You All <i class="fa fa-heart"></i>This </h2>
+                <p>We’ve picked few pieces we’re pretty sure you’ll love. Check back often and enjoy.
+                </p>
+            </div>
+            <div class="all-product-container">
+                <div class="product-card">
+                    <img src="images/3pcs Floral Print Short-sleeve baby set.jpg" alt="">
+                    <div>
+                        <p>World's Best Brands</p>
+                        <span>Rs 1,990</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/casual-dungaree-with-linning-shirt.jpg" alt="">
+                    <div>
+                        <p>World's Best Brands</p>
+                        <span>Rs 1,990</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/dotted-drees.jpg" alt="">
+                    <div>
+                        <p>World's Best Brands</p>
+                        <span>Rs 1,990</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/decent-top.png" alt="">
+                    <div>
+                        <p>World's Best Brands</p>
+                        <span>Rs 1,990</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/3pcs Floral Print Short-sleeve baby set.jpg" alt="">
+                    <div>
+                        <p>World's Best Brands</p>
+                        <span>Rs 1,990</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/casual-dungaree-with-linning-shirt.jpg" alt="">
+                    <div>
+                        <p>World's Best Brands</p>
+                        <span>Rs 1,990</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/dotted-drees.jpg" alt="">
+                    <div>
+                        <p>World's Best Brands</p>
+                        <span>Rs 1,990</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/decent-top.png" alt="">
+                    <div>
+                        <p>World's Best Brands</p>
+                        <span>Rs 1,990</span>
+                    </div>
+                </div>
+                <div class="show-all-products">
+                    <button class="btn button-2">Shop All Products</button>
+                </div>
+            </div>
+        </section>
+        <section id="girls-products">
+            <div class="girls-products-container">
+                <div class="girls-collection-image">
+                    <img src="images/girls-collection.jpg" alt="">
+                </div>
+                <div class="girls-collection-banner">
+                    <div class="banner-description">
+                        <span> BACK TO SCHOOL</span>
+                        <h2>Girls collection</h2>
+                        <p>We celebrate childhood by supporting babies, children, and families with thoughtful designs, quality materials and construction, and convenient shopping options.
+                        </p>
+                        <div class="shop-collection-btn">
+                            <button class="btn button-1">Shop Collection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="boys-products "></section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-nav-container">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="home ">Home</a></li>
+                        <li><a href="checkout ">Checkout</a></li>
+                        <li><a href="blog ">Blog</a></li>
+                        <li><a href="wishlist ">wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-brand ">
+                    <a href="home ">
+                        <img src="images/envougue.png" alt="logo ">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-info ">
+                <ul class="footer-info-list">
+                    <li>Information
+                        <ul>
+                            <li><a href="contact">Contact</a></li>
+                            <li><a href="checkout">Checkout</a></li>
+                            <li> <a href="blog">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li>Extras
+                        <ul>
+                            <li><a href="shipping">Shipping & Handling</a></li>
+                            <li><a href="return">Return and Exchange</a></li>
+                            <li><a href="whyus">Why Us</a></li>
+                        </ul>
+                    </li>
+                    <li>Have a Question
+                        <ul>
+                            <li>Mon - Sat: 09:00 - 18:30</li>
+                            <li>Al Anaya mall G11 Islamabad</li>
+                            <li>03331501483</li>
+                            <li>
+                                Info@juniorenvogue.com
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Payment Options
+                        <ul>
+                            <li><img src="images/mastercard.jpg" alt=""></li>
+                            <li><img src="images/visacard.png" alt=""></li>
+                            <li><img src="images/cashond.jpeg" alt=""></li>
+                            <li>
+                                <img src="images/2co.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="search-product-modal" class="modal">
+        <div> <button id="search-modal-close-btn" class="modal-close-btn">&#128473;</button></div>
+        <div class="modal-body">
+            <div class="search-container">
+                <div>
+                    <input type="text" placeholder="Search Products">
+                </div>
+
+                <p>Type and hit Enter to Search</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div> <button id="cart-modal-close-btn" class="modal-close-btn">&#128473;
+            
+        </button></div>
+        <div class="modal-body">
+
+            <div class="cart-container">
+                <div class="products-in-cart">
+                    <div class="product">
+                        <img src="images/decent-top.png" width="80px" alt="">
+                        <div class="product-cart-desc">
+                            <span>2tops+Stylish Pants</span>
+                            <span>color:Yellow size:2-3 years</span>
+                            <span>1 × ₨ 3,299</span>
+                        </div>
+                    </div>
+                    <span class="cancel-product"><i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="subtotal-box">
+                    <div class="subtotal">
+                        <span>Subtotal</span>
+                        <span>Rs. 3,299</span>
+                    </div>
+                    <div class="card-btn-set">
+                        <button class="btn button-3"> <i class="fa fa-shopping-bag fa-1x"></i> View Cart</button>
+                        <button class="btn button-2"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>CheckOut</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js "></script>
+</body>
+
+</html>
